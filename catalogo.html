@@ -11,27 +11,30 @@
 </head>
 <body>
     <header class="header">
+        <h1>
+            <a href="index.html">Leitura Viva</a>
+        </h1>
         <!-- Carrinho -->
         <div class="header-actions">
             <div class="search-container">
             <a href="search.html" class="search-link" aria-label="Pesquisar livros" title="Pesquisar livros" hreflang="pt-pt" target="_self" rel="next">
               🔍
             </a>    
-            </div>
-            <button class="cart-button" aria-label="Abrir carrinho de compras">
-            <span aria-hidden="true">🛒</span>
-            </button>
         </div>
-        <h1>
-            <a href="index.html">Leitura Viva</a>
-        </h1>
+            <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho" title="Ver carrinho" hreflang="pt-pt" target="_self" rel="next">
+            🛒
+            </a>    
+        </div>
         <nav>
             <ul>
                 <li>
                     <a href="index.html">Início</a>
                 </li>
                 <li>
-                    <a href="#catalogo">Catálogo</a>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="carrinho.html">Carrinho</a>
                 </li>
                 <li>
                     <a href="#contato">Contato</a>
@@ -41,35 +44,61 @@
     </header>
     <main>
         <section class="catalogo-container">
+            
             <h2>
                 Explora todos os livros disponíveis
             </h2>
+
             <div class="cat-cards">
-                <h2></h2>
                 <article class="card">
                     <h3>
-                        <a href="#romance">Romance que prende</a>
+                        <a href="search.html">Pesquisar livros</a>
                     </h3>
                 </article>
                 <article class="card">
                     <h3>
-                        <a href="#ficcao">Ficção que expande a mente</a>
+                        <button>Ordenar por preço</button>
                     </h3>
                 </article>
                 <article class="card">
                     <h3>
-                        <a href="#terror">Terror que arrepia</a>
+                        <button>Filtrar categorias</button>
                     </h3>
                 </article>
                 <article class="card">
                     <h3>
-                        <a href="#vendido">Mais vendidos</a>
+                        <button>Recomendados</button>
                     </h3>
                 </article>
-                <article class="card">
-                    <h3>
-                        <a href="#recomendado">Recomendados</a>
-                    </h3>
+            </div>
+            
+            <div class="destaque">
+                <h3>
+                    Livros em destaque da semana
+                    <article class="card-destaque">
+                </h3>
+                    <div class="img">
+                        Imagem de destaque
+                    </div>
+                    <h4>
+                        Collen Hoover
+                    </h4>
+                    <p>Mais vendido</p>
+                    <p>
+                        Descubra histórias de amor envolventes e emocionantes.
+                    </p>
+                </article>
+                <article class="card-destaque">
+                    <div class="img">
+                        Imagem de destaque
+                    </div>
+                    <h4>
+                        Fiodor Dostoiévski
+                    </h4>
+                    <p>Novo</p>
+                    <p>
+                        Descubra histórias de amor envolventes e emocionantes.
+                    </p>
                 </article>
             </div>
             <div class="catalogo-grid">
@@ -78,105 +107,105 @@
                         foto do livro
                     </div>
                     <h3>
-                        Livro 1
+                        Startup Enxuta
                     </h3>
                     <p>
-                        Descrição do livro 1.
+                        Um guia prático para empreendedores que desejam criar negócios inovadores e de sucesso, utilizando a metodologia Lean Startup.
                     </p>
                     <p>
-                        preço do livro 1
+                        5.950kz
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <a href="carrinho.html">Quero este livro</a>
                 </article>
                 <article class="book-card">
                     <div class="image">
                         foto do livro
                     </div>
                     <h3>
-                        Livro 2
+                        Noites Brancas
                     </h3>
                     <p>
-                        Descrição do livro 2.
+                        Uma história de amor e solidão ambientada em São Petersburgo, onde um jovem sonhador se apaixona por uma mulher misteriosa durante quatro noites mágicas.
                     </p>
                     <p>
-                        preço do livro 2
+                        7.500kz
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <a href="carrinho.html">Quero este livro</a>
                 </article>
                 <article class="book-card">
                     <div class="image">
                         foto do livro
                     </div>
                     <h3>
-                        Livro 3
+                        A morte de ivan ilitch
                     </h3>
                     <p>
-                        Descrição do livro 3.
+                        Uma obra-prima da literatura russa, onde Tolstói explora a vida, a morte e o sentido da existência através da história de Ivan Ilitch.
                     </p>
                     <p>
-                        preço do livro 3
+                        9.000kz
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <a href="carrinho.html">Quero este livro</a>
                 </article>
                 <article class="book-card">
                     <div class="image">
                         foto do livro
                     </div>
                     <h3>
-                        Livro 4
+                        A republica
                     </h3>
                     <p>
-                        Descrição do livro 4.
+                        Uma obra clássica da filosofia política, onde Platão explora a natureza da justiça, a estrutura ideal da sociedade e o papel do governante.
                     </p>
                     <p>
-                        preço do livro 4
+                        12.000kz
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <a href="carrinho.html">Quero este livro</a>
                 </article>
                 <article class="book-card">
                     <div class="image">
                         foto do livro
                     </div>
                     <h3>
-                        Livro 5
+                        Sobre a brevidade da vida
                     </h3>
                     <p>
-                        Descrição do livro 5.
+                        Uma reflexão filosófica sobre a natureza efêmera da existência humana e a importância de aproveitar cada momento.
                     </p>
                     <p>
-                        preço do livro 5
+                        15.000kz
                     </p>
-                    <a href="#livros">Adicionar ao carrinho</a>
+                    <a href="carrinho.html">Quero este livro</a>
                 </article>
                 <article class="book-card">
                     <div class="image">
                         foto do livro
                     </div>
                     <h3>
-                        Livro 6
+                        0 capital
                     </h3>
                     <p>
-                        Descrição do livro 6.
+                        Uma análise profunda do capitalismo e suas implicações sociais, econômicas e políticas.
                     </p>
                     <p>
-                        preço do livro 6
+                        18.000kz
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <a href="carrinho.html">Quero este livro</a>
                 </article>
                 <article class="book-card">
                     <div class="image">
                         foto do livro
                     </div>
                     <h3>
-                        Livro 7
+                        Eu e esse meu coração
                     </h3>
                     <p>
-                        Descrição do livro 7.
+                        Romance, drama e superação se entrelaçam nesta história emocionante de amor e resiliência.
                     </p>
                     <p>
-                        preço do livro 7
+                        20.000kz
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <a href="carrinho.html">Quero este livro</a>
                 </article>
             </div>
         </section>
@@ -192,8 +221,7 @@
                   <h3>Links</h3>
                     <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="#catalogo">Catálogo</a></li>
-                    <li><a href="#livros">Livros</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
                     <li><a href="#Contato">Contato</a></li>
                     </ul>
             </div>
@@ -209,7 +237,6 @@
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
-        </div>
 
         <div class="footer-bottom">
             <p>© 2026 Leitura Viva. Todos os direitos reservados.</p>
