@@ -21,8 +21,8 @@
               🔍
             </a>
         </div>
-            <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho" title="Ver carrinho" hreflang="pt-pt" target="_self" rel="next">
-            🛒
+            <a href="carrinho.html" class="cart-link">
+            🛒 <span id="cart-count">0</span>
             </a>
         </div>
         <nav>
@@ -92,7 +92,12 @@
                     <p>
                         preço do livro 1
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="1"
+                        data-name="Startup Enxuta"
+                        data-price="5950">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                     <article class="book-card">
                     <div class="image">
@@ -107,7 +112,12 @@
                     <p>
                         preço do livro 2
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="2"
+                        data-name="O Poder do Hábito"
+                        data-price="6990">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                 <article class="book-card">
                     <div class="image">
@@ -122,7 +132,12 @@
                     <p>
                         preço do livro 3
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="3"
+                        data-name="Mindset"
+                        data-price="7990">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
             </div>
             </div>
@@ -177,7 +192,12 @@
                     <p>
                         preço do livro 1
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="1"
+                        data-name="Startup Enxuta"
+                        data-price="5950">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                 <article class="book-card">
                     <div class="image">
@@ -192,7 +212,12 @@
                     <p>
                         preço do livro 2
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="2"
+                        data-name="O Poder do Hábito"
+                        data-price="6990">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                 <article class="book-card">
                     <div class="image">
@@ -207,7 +232,12 @@
                     <p>
                         preço do livro 3
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="1"
+                        data-name="Startup Enxuta"
+                        data-price="5950">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                 <article class="book-card">
                     <div class="image">
@@ -222,7 +252,12 @@
                     <p>
                         preço do livro 4
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="1"
+                        data-name="Startup Enxuta"
+                        data-price="5950">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                 <article class="book-card">
                     <div class="image">
@@ -237,7 +272,12 @@
                     <p>
                         preço do livro 5
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="5"
+                        data-name="Livro 5"
+                        data-price="5950">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                 <article class="book-card">
                     <div class="image">
@@ -252,7 +292,12 @@
                     <p>
                         preço do livro 6
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="6"
+                        data-name="Livro 6"
+                        data-price="5950">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
                 <article class="book-card">
                     <div class="image">
@@ -267,7 +312,12 @@
                     <p>
                         preço do livro 7
                     </p>
-                    <a href="carrinho.html">Adicionar ao carrinho</a>
+                    <button class="add-to-cart"
+                        data-id="7"
+                        data-name="Livro 7"
+                        data-price="5950">
+                        Adicionar ao carrinho
+                    </button>
                 </article>
             </div>
         </section>
@@ -277,7 +327,7 @@
             <div class="reviews-grid">
                 <div class="review">
                 <p class="review-text">
-                    “Amei a qualidade dda entrega!”
+                    “Amei a qualidade da entrega!”
                 </p>
                 <span class="review-name">— Carlos M.</span>
                 </div>
@@ -390,9 +440,20 @@
             <div class="footer-links">
                   <h3>Links</h3>
                     <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                    <li>
+                        <a href="carrinho.html" class="cart-link">
+                        🛒 <span id="cart-count">0</span>
+                        </a>
+                    </li>
                     </ul>
             </div>
 
@@ -418,6 +479,7 @@
   <i class="fa-brands fa-whatsapp"></i>
   </a>
 
+  <script src="js/main.js"></script>
   <script src="js/index.js"></script>
 
 </body>

@@ -13,10 +13,10 @@
             <a href="search.html" class="search-link" aria-label="Pesquisar livros" title="Pesquisar livros" hreflang="pt-pt" target="_self" rel="next">
               🔍
             </a>
-            </div>
-            <button class="cart-button" aria-label="Abrir carrinho de compras">
-                <span aria-hidden="true">🛒</span>
-            </button>
+        </div>
+            <a href="carrinho.html" class="cart-link">
+            🛒 <span id="cart-count">0</span>
+            </a>
         </div>
         <h1>
             <a href="index.html">Leitura Viva</a>
@@ -38,23 +38,16 @@
     <main>
         <section class="produtos-container">
             <h2>Seu Carrinho</h2>
-            
-            <div id="cart-items"></div>
-            <div class="total-container">
-                <h3 id="total">Total: 0 kz</h3>
-            </div>
 
+        <div id="cart-items"></div>
 
-            <div id="cart-items"></div>
-            <div class="total-container">
-                <h3 id="total">Total: 0 kz</h3>
-            </div>
-
+        <div class="total-container">
+            <h3>Total: <span id="total">0</span> kz</h3>
+        </div>
+        <button id="clear-cart">Limpar Carrinho</button>
         </section>
         <form action="#" method="post">
-            <input type="text" name="txt1" id="txt1" placeholder="Nome Completo" required>
             
-            <button type="submit">Finalizar Compra</button>
         </form>
 
         <!-- Mapa -->
@@ -70,9 +63,15 @@
             <div class="footer-links">
                 <h3>Links</h3>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a><li>
-                <li><a href="#Contato">Contato</a></li>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="#Contato">Contato</a>
+                </li>
             </ul>
             </div>
 
@@ -99,6 +98,8 @@
    <a href="https://wa.me/244930793980?text=Olá! Gostaria de comprar um livro." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+    <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
 </body>
 </html>

@@ -27,11 +27,9 @@ function renderCart() {
         cartContainer.appendChild(product)
     })
 
-    totalElement.innerText = "Total: " + total + " kz"
+    // ✅ Atualiza só o número
+    totalElement.innerText = total
 }
-
-
-/* Botões de ação */
 
 function increase(index) {
     cart[index].quantity++
@@ -50,9 +48,20 @@ function removeItem(index) {
     updateCart()
 }
 
-/* Atualização do carrinho */
-
 function updateCart() {
     localStorage.setItem("cart", JSON.stringify(cart))
+
     renderCart()
+    updateCartCount()
+}
+
+const clearBtn = document.getElementById("clear-cart")
+
+if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+        localStorage.removeItem("cart")
+        cart = []
+        renderCart()
+        updateCartCount()
+    })
 }

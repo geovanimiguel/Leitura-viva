@@ -19,11 +19,11 @@
             <div class="search-container">
             <a href="search.html" class="search-link" aria-label="Pesquisar livros" title="Pesquisar livros" hreflang="pt-pt" target="_self" rel="next">
               🔍
-            </a>    
+            </a>
         </div>
-            <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho" title="Ver carrinho" hreflang="pt-pt" target="_self" rel="next">
-            🛒
-            </a>    
+            <a href="carrinho.html" class="cart-link">
+            🛒 <span id="cart-count">0</span>
+            </a>
         </div>
         <nav>
             <ul>
@@ -244,6 +244,11 @@
                     <li><a href="index.html">Início</a></li>
                     <li><a href="carrinho.html">Carrinho</a></li>
                     <li><a href="#Contato">Contato</a></li>
+                    <li>
+                        <a href="carrinho.html" class="cart-link">
+                        🛒 <span id="cart-count">0</span>
+                        </a>
+                    </li>
                     </ul>
             </div>
 
@@ -269,6 +274,7 @@
    <a href="https://wa.me/244930793980?text=Olá! Gostaria de comprar um livro." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
   </a>
-
+  <script src="js/main.js"></script>
+  <script src="js/catalogo.js"></script>
 </body>
 </html>
