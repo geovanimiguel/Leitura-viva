@@ -3,103 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
+    <title>Seu Carrinho | Leitura Viva</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0ca9af2c6a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="header">
-        <!-- Carrinho -->
-        <div class="header-actions">
-            <div class="search-container">
-            <a href="search.html" class="search-link" aria-label="Pesquisar livros" title="Pesquisar livros" hreflang="pt-pt" target="_self" rel="next">
-              🔍
-            </a>
-        </div>
-            <a href="carrinho.html" class="cart-link">
-            🛒 <span id="cart-count">0</span>
-            </a>
-        </div>
+
+<header class="header">
+
+    <div class="header-top">
         <h1>
             <a href="index.html">Leitura Viva</a>
         </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Início</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catálogo</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="produtos-container">
+
+        <div class="header-actions">
+            <a href="search.html" class="search-link">🔍</a>
+            <a href="carrinho.html" class="cart-link">
+                🛒 <span id="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- CARRINHO -->
+    <section class="cart-section">
+
+        <header class="cart-header">
             <h2>Seu Carrinho</h2>
+            <p>Revê os teus livros antes de finalizar.</p>
+        </header>
 
         <div id="cart-items"></div>
 
         <div class="total-container">
             <h3>Total: <span id="total">0</span> kz</h3>
         </div>
-        <button id="clear-cart">Limpar Carrinho</button>
-        </section>
-        <form action="#" method="post">
-            
+
+        <div class="cart-actions">
+            <button id="clear-cart">Limpar Carrinho</button>
+        </div>
+
+    </section>
+
+    <!-- CHECKOUT -->
+    <section class="checkout">
+
+        <header>
+            <h2>Finalizar Pedido</h2>
+            <p>Preenche teus dados para enviarmos pelo WhatsApp</p>
+        </header>
+
+        <form id="checkout-form">
+
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Número</label>
+                <input type="tel" id="phone" required placeholder="Ex: 923000000">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Localização</label>
+                <input type="text" id="address" placeholder="Bairro, rua...">
+            </div>
+
+            <button type="submit" class="btn-checkout">
+                Finalizar no WhatsApp
+            </button>
+
         </form>
 
-        <!-- Mapa -->
-    
-    </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>Leitura Viva</h2>
-                 <p>Mantenha a Leitura viva.</p>
-            </div>
+    </section>
 
-            <div class="footer-links">
-                <h3>Links</h3>
-                <ul>
-                <li>
-                    <a href="index.html">Início</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catálogo</a>
-                </li>
-                <li>
-                    <a href="#Contato">Contato</a>
-                </li>
+</main>
+
+<footer class="footer" id="contato">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>Leitura Viva</h2>
+            <p>Mantenha a leitura viva.</p>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
             </ul>
-            </div>
+        </div>
 
-            <div class="footer-contato" id="contato">
-                <h3>Contato</h3>
-                <a href="https://wa.me/244XXXXXXXXX" target="_blank">
+        <div class="footer-contato">
+            <a href="https://wa.me/244XXXXXXXXX">
                 <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                </a>
-
-                <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-            </div>
+            </a>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 Leitura Viva. Todos os direitos reservados.</p>
-        </div>
     </div>
-  </footer>
 
-  <!-- WhatsApp -->
-   <a href="https://wa.me/244930793980?text=Olá! Gostaria de comprar um livro." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-  </a>
+    <div class="footer-bottom">
+        <p>© 2026 Leitura Viva</p>
+    </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/cart.js"></script>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+
 </body>
 </html>

@@ -3,278 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo | Explora todos os livros na nossa vitrine.</title>
-    <!-- Links -->
+    <title>Catálogo de Livros | Leitura Viva</title>
+
+    <meta name="description" content="Explora livros que realmente fazem sentido para ti. Descobre histórias, ideias e conhecimento na Leitura Viva.">
+
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/0ca9af2c6a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </head>
+
 <body>
-    <header class="header">
-        <h1>
+
+<header class="header">
+    <div class="header-top">
+        <h1 class="logo">
             <a href="index.html">Leitura Viva</a>
         </h1>
-        <!-- Carrinho -->
+
         <div class="header-actions">
-            <div class="search-container">
-            <a href="search.html" class="search-link" aria-label="Pesquisar livros" title="Pesquisar livros" hreflang="pt-pt" target="_self" rel="next">
-              🔍
-            </a>
-        </div>
+            <a href="search.html" class="search-link" aria-label="Pesquisar livros">🔍</a>
             <a href="carrinho.html" class="cart-link">
-            🛒 <span id="cart-count">0</span>
+                🛒 <span id="cart-count">0</span>
             </a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Início</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catálogo</a>
-                </li>
-                <li>
-                    <a href="carrinho.html">Carrinho</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="catalogo-container">
-            
-            <h2>
-                Explora todos os livros disponíveis
-            </h2>
-
-            <div class="cat-cards">
-                <article class="card">
-                    <h3>
-                        <a href="search.html">Pesquisar livros</a>
-                    </h3>
-                </article>
-                <article class="card">
-                    <h3>
-                        <button aria-label="em breve">Recomendados</button>
-                    </h3>
-                </article>
-                <article class="card">
-                    <h3>
-                        <button aria-label="em breve">Ordenar por preço</button>
-                    </h3>
-                </article>
-                <article class="card">
-                    <h3>
-                        <button aria-label="em breve">Filtrar categorias</button>
-                    </h3>
-                </article>
-            </div>
-            
-            <div class="destaque">
-                <h3>
-                    Livros em destaque da semana
-                </h3>
-                <article class="card-destaque">
-                    <div class="img">
-                        Imagem de destaque
-                    </div>
-                    <h4>
-                        Collen Hoover
-                    </h4>
-                    <p>Mais vendido da Semana</p>
-                    <p>
-                        Descubra histórias de amor envolventes e emocionantes.
-                    </p>
-                </article>
-                <article class="card-destaque">
-                    <div class="img">
-                        Imagem de destaque
-                    </div>
-                    <h4>
-                        Fiodor Dostoiévski
-                    </h4>
-                    <p>Acabou de Chegar</p>
-                    <p>
-                        Descubra histórias de amor envolventes e emocionantes.
-                    </p>
-                </article>
-            </div>
-            <div class="catalogo-grid">
-                <article class="book-card">
-                    <div class="image">
-                        foto do livro
-                    </div>
-                    <h3>
-                        Startup Enxuta
-                    </h3>
-                    <p>
-                        Um guia prático para empreendedores que desejam criar negócios inovadores e de sucesso, utilizando a metodologia Lean Startup.
-                    </p>
-                    <p>
-                        5.950kz
-                    </p>
-                    <button class="add-to-cart"
-                    data-id="1"
-                    data-name="Startup Enxuta"
-                    data-price="5950">Adicionar ao Carrinho</button>
-                </article>
-                <article class="book-card">
-                    <div class="image">
-                        foto do livro
-                    </div>
-                    <h3>
-                        Noites Brancas
-                    </h3>
-                    <p>
-                        Uma história de amor e solidão ambientada em São Petersburgo, onde um jovem sonhador se apaixona por uma mulher misteriosa durante quatro noites mágicas.
-                    </p>
-                    <p>
-                        7.500kz
-                    </p>
-                    <button class="add-to-cart"
-                    data-id="1"
-                    data-name="Startup Enxuta"
-                    data-price="5950">Adicionar ao Carrinho</button>
-                </article>
-                <article class="book-card">
-                    <div class="image">
-                        foto do livro
-                    </div>
-                    <h3>
-                        A Morte de Ivan Ilitch
-                    </h3>
-                    <p>
-                        Uma obra-prima da literatura russa, onde Tolstói explora a vida, a morte e o sentido da existência através da história de Ivan Ilitch.
-                    </p>
-                    <p>
-                        9.000kz
-                    </p>
-                    <button class="add-to-cart"
-                    data-id="1"
-                    data-name="Startup Enxuta"
-                    data-price="5950">Adicionar ao Carrinho</button>
-                </article>
-                <article class="book-card">
-                    <div class="image">
-                        foto do livro
-                    </div>
-                    <h3>
-                        A República
-                    </h3>
-                    <p>
-                        Uma obra clássica da filosofia política, onde Platão explora a natureza da justiça, a estrutura ideal da sociedade e o papel do governante.
-                    </p>
-                    <p>
-                        12.000kz
-                    </p>
-                    <button class="add-to-cart"
-                    data-id="1"
-                    data-name="Startup Enxuta"
-                    data-price="5950">Adicionar ao Carrinho</button>
-                </article>
-                <article class="book-card">
-                    <div class="image">
-                        foto do livro
-                    </div>
-                    <h3>
-                        Sobre a Brevidade da Vida
-                    </h3>
-                    <p>
-                        Uma reflexão filosófica sobre a natureza efêmera da existência humana e a importância de aproveitar cada momento.
-                    </p>
-                    <p>
-                        15.000kz
-                    </p>
-                    <button class="add-to-cart"
-                    data-id="1"
-                    data-name="Startup Enxuta"
-                    data-price="5950">Adicionar ao Carrinho</button>
-                </article>
-                <article class="book-card">
-                    <div class="image">
-                        foto do livro
-                    </div>
-                    <h3>
-                        0 Capital
-                    </h3>
-                    <p>
-                        Uma análise profunda do capitalismo e suas implicações sociais, econômicas e políticas.
-                    </p>
-                    <p>
-                        18.000kz
-                    </p>
-                    <button class="add-to-cart"
-                    data-id="1"
-                    data-name="Startup Enxuta"
-                    data-price="5950">Adicionar ao Carrinho</button>
-                </article>
-                <article class="book-card">
-                    <div class="image">
-                        foto do livro
-                    </div>
-                    <h3>
-                        Eu e Esse Meu Coração
-                    </h3>
-                    <p>
-                        Romance, drama e superação se entrelaçam nesta história emocionante de amor e resiliência.
-                    </p>
-                    <p>
-                        20.000kz
-                    </p>
-                <button class="add-to-cart"
-                data-id="1"
-                data-name="Startup Enxuta"
-                data-price="5950">Adicionar ao Carrinho</button>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>Leitura Viva</h2>
-                 <p>Mantenha a Leitura viva.</p>
-            </div>
-
-            <div class="footer-links">
-                  <h3>Links</h3>
-                    <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="carrinho.html">Carrinho</a></li>
-                    <li><a href="#Contato">Contato</a></li>
-                    <li>
-                        <a href="carrinho.html" class="cart-link">
-                        🛒 <span id="cart-count">0</span>
-                        </a>
-                    </li>
-                    </ul>
-            </div>
-
-            <div class="footer-contato" id="contato">
-                <h3>Contato</h3>
-                <a href="https://wa.me/244XXXXXXXXX" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                </a>
-
-                <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-            </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Leitura Viva. Todos os direitos reservados.</p>
         </div>
     </div>
-  </footer>
 
-  <!-- WhatsApp -->
-   <a href="https://wa.me/244930793980?text=Olá! Gostaria de comprar um livro." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-  </a>
-  <script src="js/main.js"></script>
-  <script src="js/catalogo.js"></script>
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO / STORY -->
+    <section class="hero">
+        <h2>Nem todos os livros são para todos…</h2>
+        <p>
+            Mas existe um que vai bater diferente.
+            E quando encontrares… vais saber.
+        </p>
+    </section>
+
+    <!-- FILTROS / AÇÕES -->
+    <section class="catalogo-actions">
+        <h2 class="sr-only">Ações do catálogo</h2>
+
+        <div class="actions-grid">
+            <a href="search.html" class="action-card">🔎 Pesquisar</a>
+            <button class="action-card">🔥 Recomendados</button>
+            <button class="action-card">💰 Ordenar preço</button>
+            <button class="action-card">📚 Categorias</button>
+        </div>
+    </section>
+
+    <!-- DESTAQUE -->
+    <section class="destaques">
+        <header>
+            <h2>🔥 Destaques da Semana</h2>
+        </header>
+
+        <div class="destaque-grid">
+
+            <article class="card-destaque">
+                <div class="img">Imagem</div>
+                <h3>Colleen Hoover</h3>
+                <p>Mais vendido</p>
+            </article>
+
+            <article class="card-destaque">
+                <div class="img">Imagem</div>
+                <h3>Fiódor Dostoiévski</h3>
+                <p>Acabou de chegar</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- LISTA DE LIVROS -->
+    <section class="catalogo">
+        <header>
+            <h2>Explora os livros</h2>
+            <p>Escolhe com calma. Aqui não é corrida.</p>
+        </header>
+
+        <div class="catalogo-grid">
+
+            <!-- LIVRO -->
+            <article class="book-card">
+                <span class="badge">Mais vendido</span>
+
+                <div class="image">Imagem</div>
+
+                <h3>Startup Enxuta</h3>
+
+                <p class="feeling">Ideal se estás a começar 🚀</p>
+
+                <p>
+                    “Se tens uma ideia e não sabes por onde começar… este livro vai te acordar.”
+                </p>
+
+                <p class="price">5.950 kz</p>
+
+                <button class="add-to-cart"
+                    data-id="1"
+                    data-name="Startup Enxuta"
+                    data-price="5950">
+                    Adicionar
+                </button>
+            </article>
+
+            <!-- LIVRO -->
+            <article class="book-card">
+                <span class="badge">Novo</span>
+
+                <div class="image">Imagem</div>
+
+                <h3>Noites Brancas</h3>
+
+                <p>
+                    Uma história de amor e solidão em quatro noites inesquecíveis.
+                </p>
+
+                <p class="price">7.500 kz</p>
+
+                <button class="add-to-cart"
+                    data-id="2"
+                    data-name="Noites Brancas"
+                    data-price="7500">
+                    Adicionar
+                </button>
+            </article>
+
+            <!-- BREAK EMOCIONAL -->
+            <div class="break-section">
+                <p>
+                    Nem todo mundo vai entender o que estás a procurar…
+                    mas quando encontrares, vais sentir.
+                </p>
+            </div>
+
+            <!-- MAIS LIVROS -->
+            <article class="book-card">
+                <div class="image">Imagem</div>
+
+                <h3>A República</h3>
+
+                <p>
+                    Uma obra clássica sobre justiça, poder e sociedade.
+                </p>
+
+                <p class="price">12.000 kz</p>
+
+                <button class="add-to-cart"
+                    data-id="4"
+                    data-name="A República"
+                    data-price="12000">
+                    Adicionar
+                </button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta">
+        <h2>Ainda não encontraste?</h2>
+
+        <p>
+            Talvez o livro certo ainda não chegou…
+            ou talvez estás prestes a descobrir algo melhor.
+        </p>
+
+        <a href="https://wa.me/244930793980?text=Estou à procura de um livro específico"
+           class="btn-whatsapp">
+           Pedir ajuda no WhatsApp
+        </a>
+    </section>
+
+</main>
+
+<footer class="footer" id="contato">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>Leitura Viva</h2>
+            <p>Mantenha a leitura viva.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Links úteis">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-contato">
+            <h3>Contato</h3>
+
+            <a href="https://wa.me/244XXXXXXXXX">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Leitura Viva</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/catalogo.js"></script>
+
 </body>
 </html>
