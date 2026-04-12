@@ -1,10 +1,112 @@
-@charset "UTF-8";
+  /* ============================= */
+/* LEITURA VIVA - EVOLUÇÃO SUAVE */
+/* ============================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: #;
-    --secondary-color: #;
-    --background-color: #;
-    --text-color: #;
-    --font-family: 'Arial', sans-serif;
+    --vinho: #630D16;
+    --vinho-light: #82141E;
+    --preto: #1A1A1A;
+    --bg: #FDFDFD;
+    --cinza: #F5F5F5;
+    --text: #333;
+    --text-light: #666;
+    --white: #fff;
+    --border: #eee;
+
+    --font-title: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --radius: 6px;
+    --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
+    --shadow-strong: 0 20px 40px rgba(0,0,0,0.08);
+
+    --transition: 0.3s ease;
 }
 
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* TIPOGRAFIA */
+h1, h2, h3, .logo {
+    font-family: var(--font-title);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    box-shadow: var(--shadow-soft);
+    z-index: 1000;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+.logo span {
+    color: var(--vinho);
+}
+
+/* NAV */
+.nav-bar {
+    border-top: 1px solid var(--border);
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+    list-style: none;
+}
+
+.nav-bar a {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    left: 0;
+    background: var(--vinho);
+    transition: var(--transition);
+}
+
+.nav-bar a:hover::after,
+.nav-bar a.active::after {
+    width: 100%;
+}

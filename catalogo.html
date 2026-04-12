@@ -87,12 +87,22 @@
         <header>
             <h2>Explora os livros</h2>
             <p>Escolhe com calma. Aqui não é corrida.</p>
-        </header>
+            
+        <!-- FILTROS -->
+         <div class="catalogo-filters">
+                <h3>Filtrar por categoria</h3>
+                <div class="filters">
+                    <button data-filter="all" class="active">Todos</button>
+                    <button data-filter="negocios">Negócios</button>
+                    <button data-filter="romance">Romance</button>
+                    <button data-filter="filosofia">Filosofia</button>
+                    <button data-filter="economia">Economia</button>
+                </div>
+         </div>
 
         <div class="catalogo-grid">
-
             <!-- LIVRO -->
-            <article class="book-card">
+            <article class="book-card" data-category="negocios">
                 <span class="badge">Mais vendido</span>
 
                 <div class="image">Imagem</div>
@@ -116,7 +126,7 @@
             </article>
 
             <!-- LIVRO -->
-            <article class="book-card">
+            <article class="book-card" data-category="romance">
                 <span class="badge">Novo</span>
 
                 <div class="image">Imagem</div>
@@ -146,7 +156,7 @@
             </div>
 
             <!-- MAIS LIVROS -->
-            <article class="book-card">
+            <article class="book-card" data-category="filosofia">
                 <div class="image">Imagem</div>
 
                 <h3>A República</h3>

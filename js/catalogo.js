@@ -36,3 +36,39 @@ buttons.forEach(button => {
         updateCartCount()
     })
 })
+
+function filterCategory(category) {
+
+    const books = document.querySelectorAll(".book-card")
+
+    books.forEach(book => {
+
+        const bookCategory = book.dataset.category
+
+        if (category === "all" || bookCategory === category) {
+            book.style.display = "block"
+        } else {
+            book.style.display = "none"
+        }
+
+    })
+}
+
+const filterButtons = document.querySelectorAll("[data-filter]")
+const books = document.querySelectorAll(".book-card")
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter
+
+        books.forEach(book => {
+            const category = book.dataset.category
+
+            if (filter === "all" || filter === category) {
+                book.style.display = "block"
+            } else {
+                book.style.display = "none"
+            }
+        })
+    })
+})
